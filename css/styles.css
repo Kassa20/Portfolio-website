@@ -6,6 +6,8 @@
   --color-body: #918ca4;
 }
 
+/* topography */
+
 html {
   /* 62.5% of 16px = 10px */
   font-size: 62.5%;
@@ -58,4 +60,26 @@ p {
   h3 {
     font-size: 2.4rem;
   }
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+.link-arrow {
+  color: var(--color-accent);
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.link-arrow::after {
+  content: "-->";
+  /* using px b/c we want it to be the same regardless of screen size */
+  margin-left: 5px;
+}
+
+.link-arrow:hover::after {
+  margin-left: 10px;
 }
