@@ -6,7 +6,7 @@
   --color-body: #918ca4;
 }
 
-/* topography */
+/* *? TOPOGRAPHY */
 
 html {
   /* 62.5% of 16px = 10px */
@@ -62,7 +62,9 @@ p {
   }
 }
 
-/* Links */
+/*? ------------------------------------------ */
+/* *? LINKS */
+
 a {
   text-decoration: none;
 }
@@ -91,7 +93,8 @@ a {
   }
 }
 
-/* badges */
+/*? ------------------------------------------ */
+/*? BADGES */
 
 .badge {
   /* px because we dont want dependancy on font size */
@@ -113,19 +116,45 @@ a {
 }
 
 .badge--small {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
-@media screen and (min-width: 1024px)
-{
-    .badge 
-    {
-        font-size: 1.5rem;
-    }
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
 
-    .badge-small 
-    {
-        font-size: 1.2rem;
-    }
-    
+  .badge-small {
+    font-size: 1.2rem;
+  }
+}
+
+/*? ------------------------------------------ */
+/* *? LISTS */
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  color: var(--color-headings);
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.list--tick {
+  list-style-image: url(../images/tick.svg);
+  padding-left: 3rem;
+}
+
+.list--tick .list__item {
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .list--tick .list__item {
+    padding-left: 0;
+  }
 }
