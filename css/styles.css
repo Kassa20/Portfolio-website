@@ -78,8 +78,15 @@ a {
   content: "-->";
   /* using px b/c we want it to be the same regardless of screen size */
   margin-left: 5px;
+  transition: margin 0.15s;
 }
 
 .link-arrow:hover::after {
   margin-left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .link-arrow {
+    font-size: 1.5rem;
+  }
 }
