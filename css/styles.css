@@ -4,6 +4,8 @@
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
+  --color-border: #ccc;
+  --border-radius: 30px;
 }
 
 *,
@@ -185,7 +187,7 @@ a {
   width: 64px;
   height: 64px;
   border-radius: 100%;
-  /* width and hight have no effect on inline elements such as span */
+  /* width and hight have no effect on inline elements such as span, so change to inline-flex */
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -253,6 +255,47 @@ a {
 
 @media screen and (min-width: 1024px) {
   .btn {
+    font-size: 1.5rem;
+  }
+}
+
+/*? ------------------------------------------ */
+/* *? INPUTS */
+/*? ------------------------------------------ */
+
+.input {
+  padding: 1.5rem 3.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  outline: 0;
+  color: var(--color-headings);
+  font-size: 2rem;
+}
+
+::placeholder {
+  color: #cdcbd7;
+}
+
+.input-group {
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  display: flex;
+}
+
+/* If an .input is inside an input-group, no border */
+.input-group .input {
+  border: 0;
+  /* let the text take the entire space to push button */
+  flex-grow: 1;
+  padding: 1.5rem 1rem;
+}
+
+.input-group .btn {
+  margin: 4px;
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
     font-size: 1.5rem;
   }
 }
