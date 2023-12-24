@@ -148,7 +148,6 @@ a {
 .list {
   list-style: none;
   padding-left: 0;
-  color: var(--color-headings);
 }
 
 .list--inline .list__item {
@@ -159,6 +158,7 @@ a {
 .list--tick {
   list-style-image: url(../images/tick.svg);
   padding-left: 3rem;
+  color: var(--color-headings);
 }
 
 .list--tick .list__item {
@@ -447,6 +447,7 @@ a {
 
 .media {
   display: flex;
+  margin-bottom: 4rem;
 }
 
 .media__title {
@@ -654,6 +655,11 @@ a {
   text-align: center;
 }
 
+.block__header h2 {
+  text-align: center;
+  color: var(--color-headings);
+}
+
 .block__heading {
   margin-top: 0;
 }
@@ -663,18 +669,20 @@ a {
   color: #7b858b;
 }
 
-.block--dark .block__heading {
+.block--dark h1,
+h2,
+h3 {
   color: white;
 }
 
 .block--skewed-right {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
-  clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 80%);
+  clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 90%);
 }
 
 .block--skewed-left {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
-  clip-path: polygon(0 0%, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0%, 100% 0, 100% 90%, 0 100%);
 }
 
 .container {
@@ -845,5 +853,98 @@ a {
 @media screen and (min-width: 768px) {
   .feature:nth-of-type(even) .feature__content {
     order: 2;
+  }
+}
+
+/*? ------------------------------------------ */
+/* ? SHOWCASE */
+/*? ------------------------------------------ */
+
+.showcase__img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .block-showcase .grid {
+    grid-template-columns: 50% 50%;
+  }
+
+  .showcase__img {
+    width: auto;
+    justify-self: end;
+  }
+}
+
+/*? ------------------------------------------ */
+/* ? FOOTER */
+/*? ------------------------------------------ */
+
+.footer {
+  background-color: #232323;
+}
+
+.footer a {
+  color: #777;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+.footer__section {
+  padding: 2rem;
+  border-bottom: 1px solid #393939;
+}
+
+.footer__section .list {
+  margin: 0;
+}
+
+.footer__heading {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.footer__brand {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.footer__copyright {
+  font-size: 2.1rem;
+  color: white;
+  opacity: 0.3;
+}
+
+@media screen and (min-width: 768px) {
+  .footer .grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .footer .collapsible__chevron {
+    display: none;
+  }
+
+  .footer .collapsible__content {
+    opacity: 1;
+    max-height: 100%;
+  }
+
+  .footer__brand {
+    order: -1;
+    margin-top: 1rem;
+  }
+
+  .footer__copyright {
+    font-size: 1.5rem;
+  }
+  .footer__section {
+    border: 0;
+  }
+
+  .footer__heading {
+    font-size: 1.5rem;
   }
 }
