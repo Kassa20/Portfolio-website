@@ -865,6 +865,10 @@ h3 {
   height: auto;
 }
 
+.block-showcase h2 {
+    color: white;
+}
+
 @media screen and (min-width: 768px) {
   .block-showcase .grid {
     grid-template-columns: 50% 50%;
