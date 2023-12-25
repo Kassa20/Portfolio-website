@@ -677,7 +677,7 @@ h3 {
 
 .block--skewed-right {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
-  clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 90%);
+  clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 96%);
 }
 
 .block--skewed-left {
@@ -841,11 +841,11 @@ h3 {
 
 .feature {
   gap: 4rem;
-  margin: 12rem 0;
+  margin: 7rem 0;
 }
 
 .feature__content h3 {
-    color: var(--color-headings);
+  color: var(--color-headings);
 }
 
 .feature:first-of-type {
@@ -874,10 +874,36 @@ h3 {
 .showcase__img {
   max-width: 100%;
   height: auto;
+  margin-bottom: 6rem;
+}
+
+.showcase__img__soccer {
+  max-width: 80%;
+  margin-bottom: 4rem;
+}
+
+.showcase__img__running {
+  max-width: 80%;
+  margin-left: 8rem;
+}
+
+.showcase__img__NSAA {
+  max-width: 80%;
+  margin-left: 8rem;
 }
 
 .block-showcase h2 {
   color: white;
+}
+
+.block-showcase h3 {
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.showcase__header {
+  color: white;
+  margin-bottom: 10rem;
 }
 
 @media screen and (min-width: 768px) {
