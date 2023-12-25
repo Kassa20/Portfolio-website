@@ -1,7 +1,7 @@
 :root {
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
-  --color-accent: #ff3400;
+  --color-accent: #2584ff;
   --color-headings: #1b0760;
   --color-body: #918ca4;
   --color-body-darker: #5c5577;
@@ -704,6 +704,11 @@ h3 {
   align-items: center;
 }
 
+/* TODO: add a logo */
+/* .nav .nav__logo {
+    color: var(--color-accent);
+} */
+
 .nav__list {
   width: 100%;
   margin: 0;
@@ -773,7 +778,9 @@ h3 {
 }
 
 .hero__image {
-  width: 100%;
+  width: 80%;
+  padding: 3rem;
+  margin-top: 2rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -837,6 +844,10 @@ h3 {
   margin: 12rem 0;
 }
 
+.feature__content h3 {
+    color: var(--color-headings);
+}
+
 .feature:first-of-type {
   margin-top: 6rem;
 }
@@ -866,7 +877,7 @@ h3 {
 }
 
 .block-showcase h2 {
-    color: white;
+  color: white;
 }
 
 @media screen and (min-width: 768px) {

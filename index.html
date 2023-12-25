@@ -17,16 +17,24 @@
   <body>
     <header>
       <nav class="nav collapsible">
-        <a class="nav__brand" href="/"><img src="images/logo.svg" alt="" /></a>
-        <svg class="icon icon--white nav__toggler">
+        <!-- <a class="nav__brand" href="/"><img src="images/logo.svg" alt="" /></a> -->
+        <!-- TODO: add a logo -->
+        <img
+          class="nav__logo"
+          width="100"
+          height="100"
+          src="https://img.icons8.com/ios/100/y.png"
+          alt="y"
+        />
+        <!-- <svg class="icon icon--white nav__toggler">
           <use xlink:href="images/sprite.svg#menu"></use>
-        </svg>
+        </svg> -->
 
         <ul class="list nav__list collapsible__content">
-          <li class="nav__item"><a href="#">Hosting</a></li>
-          <li class="nav__item"><a href="#">VPS</a></li>
-          <li class="nav__item"><a href="#">Domain</a></li>
-          <li class="nav__item"><a href="#">Pricing</a></li>
+          <li class="nav__item"><a href="#">Github</a></li>
+          <li class="nav__item"><a href="#">Resume</a></li>
+          <li class="nav__item"><a href="#">Linkedin</a></li>
+          <li class="nav__item"><a href="#">About</a></li>
         </ul>
       </nav>
     </header>
@@ -34,141 +42,42 @@
     <section class="block block--dark block--skewed-left hero">
       <div class="container grid grid--1x2">
         <header class="block__header hero__content">
-          <h1 data-aos="zoom-in-up" class="block__heading">
-            Cloud Hosting for Pros
-          </h1>
+          <h1 data-aos="zoom-in-up" class="block__heading">Welcome!</h1>
           <p class="hero__tagline">
-            Deploy your website in less than 60 seconds.
+            Hey! This is Yohannes, I'm a computer science student at Dakota
+            State University with a strong background in data structures and
+            algorithms.
           </p>
-          <a href="" class="btn btn--accent btn--stretched">Get Started</a>
+          <p class="hero__tagline">
+            This is a personal website i've developed to share my journy. Check
+            out my about page for more info!
+          </p>
+
+          <a href="" class="btn btn--accent btn--stretched">Browse</a>
         </header>
         <img
           data-aos="zoom-in"
           class="hero__image"
-          src="images/banner.png"
+          src="images/yohannes.png"
           alt=""
         />
-      </div>
-    </section>
-
-    <!-- SEARCH DOMAIN -->
-    <section data-aos="zoom-in-up" class="block container block-domain">
-      <header class="block__header">
-        <h2>Starting at $9 per month</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, iure!
-        </p>
-      </header>
-      <div class="input-group">
-        <input
-          type="text"
-          class="input"
-          placeholder="Enter domain name here..."
-        />
-        <button class="btn btn--accent">
-          <svg class="icon icon--white">
-            <use xlink:href="images/sprite.svg#search"></use>
-          </svg>
-          Search
-        </button>
-      </div>
-
-      <ul class="list block-domain__prices">
-        <li><span class="badge badge--secondary">.com $9</span></li>
-        <li>.sg $10</li>
-        <li>.space $11</li>
-        <li>.info $14</li>
-        <li>.net $10</li>
-        <li>.xyz $10</li>
-      </ul>
-    </section>
-
-    <!-- PLAN -->
-
-    <section data-aos="fade-up" class="block container block-plans">
-      <div class="grid grid--1x3">
-        <div class="plan">
-          <div class="card card--secondary">
-            <header class="card__header">
-              <h3 class="plan__name">Entry</h3>
-              <span class="plan__price">$14</span>
-              <span class="plan__billing-cycle">/month</span>
-              <span class="badge badge--secondary badge--small">10% OFF</span>
-              <span class="plan__description">Easily start on the cloud</span>
-            </header>
-            <div class="card__body">
-              <ul class="list list--tick">
-                <li class="list__item">Unlimited Websites</li>
-                <li class="list__item">Unlimited Bandwidth</li>
-                <li class="list__item">100 GB SSD Storage</li>
-                <li class="list__item">3 GB RAM</li>
-              </ul>
-              <button class="btn btn--outline btn--block">Buy Now</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="plan plan--popular">
-          <div class="card card--primary">
-            <header class="card__header">
-              <h3 class="plan__name">Entry</h3>
-              <span class="plan__price">$14</span>
-              <span class="plan__billing-cycle">/month</span>
-              <span class="badge badge--primary badge--small">10% OFF</span>
-              <span class="plan__description">Easily start on the cloud</span>
-            </header>
-            <div class="card__body">
-              <ul class="list list--tick">
-                <li class="list__item">Unlimited Websites</li>
-                <li class="list__item">Unlimited Bandwidth</li>
-                <li class="list__item">100 GB SSD Storage</li>
-                <li class="list__item">3 GB RAM</li>
-              </ul>
-              <button class="btn btn--outline btn--block">Buy Now</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="plan">
-          <div class="card card--secondary">
-            <header class="card__header">
-              <h3 class="plan__name">Entry</h3>
-              <span class="plan__price">$14</span>
-              <span class="plan__billing-cycle">/month</span>
-              <span class="badge badge--secondary badge--small">10% OFF</span>
-              <span class="plan__description">Easily start on the cloud</span>
-            </header>
-            <div class="card__body">
-              <ul class="list list--tick">
-                <li class="list__item">Unlimited Websites</li>
-                <li class="list__item">Unlimited Bandwidth</li>
-                <li class="list__item">100 GB SSD Storage</li>
-                <li class="list__item">3 GB RAM</li>
-              </ul>
-              <button class="btn btn--outline btn--block">Buy Now</button>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
     <!-- FEATURE -->
     <section class="block container">
       <header class="block__header">
-        <h2>Host on the Cloud to Keep Growing</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur,
-          molestiae.
-        </p>
+        <h2>My Education</h2>
       </header>
       <article class="grid grid--1x2 feature">
         <div class="feature__content" data-aos="fade-right">
-          <span class="icon-container">
+          <!-- <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#easy"></use>
             </svg>
-          </span>
-          <h3 class="feature__heading">Super Easy yo Use</h3>
+          </span> -->
+          <h3 class="feature__heading">Dakota State University</h3>
+          <p>Bachelors Degree | 2021-present</p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
             libero ex in labore aut. Corrupti nam beatae hic sunt unde possimus
@@ -177,22 +86,26 @@
           <a href="#" class="link-arrow">Learn More</a>
         </div>
 
-        <img
+        <!-- <img
           data-aos="zoom-in-left"
           class="feature__img"
           src="images/easy.jpg"
           alt=""
-        />
+        /> -->
       </article>
 
+      <header class="block__header">
+        <h2>My Experiences</h2>
+      </header>
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
-          <span class="icon-container">
+        <div class="feature__content" data-aos="fade-right">
+          <!-- <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#easy"></use>
             </svg>
-          </span>
-          <h3 class="feature__heading">Super Easy yo Use</h3>
+          </span> -->
+          <h3 class="feature__heading">FIRST-PREMIER-BANK/BANKCARD</h3>
+          <p>Software Developer Intern</p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
             libero ex in labore aut. Corrupti nam beatae hic sunt unde possimus
@@ -201,33 +114,19 @@
           <a href="#" class="link-arrow">Learn More</a>
         </div>
 
-        <img class="feature__img" src="images/fast.jpg" alt="" />
-      </article>
-
-      <article class="grid grid--1x2 feature">
-        <div class="feature__content">
-          <span class="icon-container">
-            <svg class="icon icon--primary">
-              <use xlink:href="images/sprite.svg#easy"></use>
-            </svg>
-          </span>
-          <h3 class="feature__heading">Super Easy yo Use</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-            libero ex in labore aut. Corrupti nam beatae hic sunt unde possimus
-            dolores officia alias amet quia, reiciendis recusandae, culpa fugit?
-          </p>
-          <a href="#" class="link-arrow">Learn More</a>
-        </div>
-
-        <img class="feature__img" src="images/easy.jpg" alt="" />
+        <!-- <img
+          data-aos="zoom-in-left"
+          class="feature__img"
+          src="images/easy.jpg"
+          alt=""
+        /> -->
       </article>
     </section>
 
     <!-- SHOWCASE -->
     <section class="block block--dark block--skewed-right block-showcase">
       <header class="block__header">
-        <h2>User-friendly Control Panel</h2>
+        <h2>Extracurriculars</h2>
       </header>
       <div class="container grid grid--1x2">
         <img class="showcase__img" src="images/ipad.png" alt="" />
