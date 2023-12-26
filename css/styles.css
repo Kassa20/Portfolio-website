@@ -213,9 +213,8 @@ a {
 }
 
 .icon-container--dark {
-    background-color: var(--color-dark);
-  }
-  
+  background-color: var(--color-dark);
+}
 
 /*? ------------------------------------------ */
 /* *? BUTTONS */
@@ -1052,7 +1051,6 @@ h3 {
 textarea {
   font-size: 1.6rem;
   font-weight: 600;
-  text-transform: capitalize;
   padding: 1rem 3rem;
   white-space: nowrap;
   margin-bottom: 2rem;

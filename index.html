@@ -37,9 +37,24 @@
         </svg> -->
 
         <ul class="list nav__list collapsible__content">
-          <li class="nav__item"><a href="https://github.com/Kassa20" target="_blank">Github</a></li>
-          <li class="nav__item"><a href="https://drive.google.com/file/d/1oRRfLtInherxebsxDo-Q9bzJJxfyOsIm/view?usp=sharing"  target="_blank"  download="resume.pdf">Resume</a></li>
-          <li class="nav__item"><a href="https://www.linkedin.com/feed/?trk=homepage-basic_sign-in-submit"  target="_blank">Linkedin</a></li>
+          <li class="nav__item">
+            <a href="https://github.com/Kassa20" target="_blank">Github</a>
+          </li>
+          <li class="nav__item">
+            <a
+              href="https://drive.google.com/file/d/1oRRfLtInherxebsxDo-Q9bzJJxfyOsIm/view?usp=sharing"
+              target="_blank"
+              download="resume.pdf"
+              >Resume</a
+            >
+          </li>
+          <li class="nav__item">
+            <a
+              href="https://www.linkedin.com/feed/?trk=homepage-basic_sign-in-submit"
+              target="_blank"
+              >Linkedin</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -192,7 +207,6 @@
     <section class="block">
       <header class="block__header">
         <h2>Thanks for visiting!</h2>
-
       </header>
       <div class="container" data-aos="fade-up">
         <div class="card testimonial">
@@ -234,7 +248,10 @@
     <section class="contact" data-aos="fade-up">
       <h2 class="contact__header">Get in touch</h2>
       <p>Lets connect!</p>
-      <form class="contact__form" onsubmit="sendEmail(); reset(); return false;">
+      <form
+        class="contact__form"
+        onsubmit="sendEmail(); reset(); return false;"
+      >
         <div class="contact__input">
           <input
             type="text"
@@ -283,12 +300,10 @@
           </div>
         </section> -->
 
-
-        <section class="footer__brand">
-          <!-- <img src="images/logo.svg" alt="" /> -->
-          <p class="footer__copyright">Copyright © 2023 Yohannes Kassa</p>
-        </section>
-      </div>
+      <section class="footer__brand">
+        <!-- <img src="images/logo.svg" alt="" /> -->
+        <p class="footer__copyright">Copyright © 2023 Yohannes Kassa</p>
+      </section>
     </footer>
 
     <script src="js/main.js"></script>
@@ -296,6 +311,14 @@
     <script>
       AOS.init();
     </script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("GngK-JsS3FwLdmNLH");
+      })();
+    </script>
   </body>
 </html>

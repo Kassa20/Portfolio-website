@@ -7,15 +7,13 @@ collapsibles.forEach((item) =>
 
 function sendEmail()
 {
-    Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "ykassa47@gmail.com",
-        Password : "password",
-        To : 'ykassa47@gmail.com',
-        From : document.getElementById("email").value,
-        Subject : "This is the subject",
-        Body : "And this is the body"
-    }).then(
-      message => alert(message)
-    );
+    var params = {
+        name : document.getElementById("name").value,
+        email : document.getElementById("email").value, 
+        message : document.getElementById("message").value
+    }
+    emailjs.send("service_thvqurl", "template_qwk25y6", params).then(function (res) {
+        alert("Thanks for contacting me! ");
+    })
 }
+
