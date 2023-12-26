@@ -37,9 +37,9 @@
         </svg> -->
 
         <ul class="list nav__list collapsible__content">
-          <li class="nav__item"><a href="#">Github</a></li>
-          <li class="nav__item"><a href="#">Resume</a></li>
-          <li class="nav__item"><a href="#">Linkedin</a></li>
+          <li class="nav__item"><a href="https://github.com/Kassa20" target="_blank">Github</a></li>
+          <li class="nav__item"><a href="https://drive.google.com/file/d/1oRRfLtInherxebsxDo-Q9bzJJxfyOsIm/view?usp=sharing"  target="_blank"  download="resume.pdf">Resume</a></li>
+          <li class="nav__item"><a href="https://www.linkedin.com/feed/?trk=homepage-basic_sign-in-submit"  target="_blank">Linkedin</a></li>
         </ul>
       </nav>
     </header>
@@ -234,7 +234,7 @@
     <section class="contact" data-aos="fade-up">
       <h2 class="contact__header">Get in touch</h2>
       <p>Lets connect!</p>
-      <form class="contact__form" action="process_form.php" method="POST">
+      <form class="contact__form" onsubmit="sendEmail(); reset(); return false;">
         <div class="contact__input">
           <input
             type="text"
@@ -296,5 +296,6 @@
     <script>
       AOS.init();
     </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>
