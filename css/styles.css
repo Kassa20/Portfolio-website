@@ -899,6 +899,15 @@ h3 {
   height: auto;
 }
 
+.feature__exp .grid--1x2 {
+  grid-template-columns: repeat(1, 2fr);
+}
+
+.feature__display {
+  /* letter-spacing: 2px; */
+  word-spacing: 0.2rem;
+}
+
 @media screen and (min-width: 768px) {
   .feature:nth-of-type(even) .feature__content {
     order: 2;
@@ -1065,4 +1074,8 @@ textarea {
 .contact__button {
   font-size: 1.3rem;
   padding: 1.8rem 2.5rem;
+}
+
+.track {
+  margin-bottom: 4rem;
 }
