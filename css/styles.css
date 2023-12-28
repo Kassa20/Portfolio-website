@@ -1043,6 +1043,7 @@ h3 {
 
 .contact {
   padding: 3rem 0 9rem 9rem;
+  margin-top: 0;
 }
 
 .contact__header {
@@ -1078,4 +1079,8 @@ textarea {
 
 .track {
   margin-bottom: 4rem;
+}
+
+.ending__header {
+  padding-bottom: 2rem;
 }
